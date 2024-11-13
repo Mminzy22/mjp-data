@@ -9,11 +9,11 @@
 <body>
 
 <header>
-    <!-- Home 링크에 relative_url 적용 -->
-    <h1><a href="{{ "/" | relative_url }}">Minji's Data Journal</a></h1>
+    <!-- site.url을 사용하여 절대 경로로 홈 링크를 설정 -->
+    <h1><a href="{{ site.url }}">Minji's Data Journal</a></h1>
     <p>{{ site.description }}</p>
 </header>
-
+    
 <main>
     {{ content }}
 </main>
