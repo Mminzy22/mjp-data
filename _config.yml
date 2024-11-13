@@ -34,3 +34,7 @@ paginate: 5  # 한 페이지에 표시할 포스트 수
 
 # 코드 하이라이터
 highlighter: rouge
+
+# CSS 추가 설정
+sass:
+  style: expanded
