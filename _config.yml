@@ -1,1 +1,26 @@
+# 기본 정보 설정
+title: "Minji's Data Journal"
+description: "A personal blog on data analysis, SQL, Python, and daily learning logs."
+url: "https://mminzy22.github.io/mjp-data"  # 정확한 루트 도메인 주소로 설정
+baseurl: ""  # 루트 경로이므로 빈 문자열로 설정
 
+# 작성자 정보
+author:
+  name: "Minji Park"
+  email: "aw7022@gmail.com"
+
+# 테마 설정
+theme: jekyll-theme-cayman  # GitHub Pages에서 지원되는 테마
+markdown: kramdown
+
+# 플러그인 설정
+plugins:
+  - jekyll-feed       # RSS 피드 생성
+  - jekyll-paginate   # 페이지네이션 기능 추가
+  - jekyll-sitemap    # 사이트맵 추가
+
+# 페이지네이션 설정
+paginate: 5  # 한 페이지에 표시할 포스트 수
+
+# 코드 하이라이터
+highlighter: rouge
