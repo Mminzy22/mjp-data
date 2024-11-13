@@ -34,3 +34,6 @@ highlighter: rouge
 # CSS 추가 설정
 sass:
   style: expanded
+
+exclude:
+  - README.md
