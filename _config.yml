@@ -9,10 +9,6 @@ author:
   name: "Minji Park"
   email: "aw7022@gmail.com"
 
-# 테마 설정
-theme: jekyll-theme-cayman  # GitHub Pages에서 지원되는 테마
-markdown: kramdown
-
 # 플러그인 설정
 plugins:
   - jekyll-feed       # RSS 피드 생성
