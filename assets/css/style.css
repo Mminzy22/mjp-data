@@ -4,23 +4,39 @@
 }
 
 html, body {
-    height: 100%; /* 페이지 전체 높이를 사용하도록 설정 */
+    height: 100%;
     margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8ff;
+    color: #333;
 }
 
-body {
+/* 레이아웃 스타일 */
+.container {
     display: flex;
-    flex-direction: column;
-    background-color: #f4f8ff; /* 연한 파란색 배경 */
-    color: #333; /* 어두운 텍스트 */
-    font-family: Arial, sans-serif;
-    padding: 0;
-    margin: 0;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* 좌측 카테고리 목록 영역 */
+.category-list {
+    width: 25%; /* 화면의 1/4 차지 */
+    padding-right: 20px;
+}
+
+/* 우측 전체 글 목록 영역 */
+.post-list {
+    width: 75%; /* 화면의 3/4 차지 */
+    background-color: #ffffff;
+    padding: 20px;
+    border-left: 1px solid #ddd;
 }
 
 /* 헤더 스타일 */
 header {
-    background-color: #1e4d8f; /* 진한 파란색 헤더 */
+    background-color: #1e4d8f;
     color: white;
     padding: 20px;
     text-align: center;
@@ -35,21 +51,13 @@ header p {
     margin: 10px 0 0;
 }
 
-/* 메인 콘텐츠 스타일 */
-main {
-    flex: 1; /* 메인 콘텐츠가 남은 공간을 차지하게 설정 */
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-}
-
 /* 제목 스타일 */
 h1, h2, h3 {
     color: #1e4d8f;
 }
 
 a {
-    color: #1e90ff; /* 파란색 링크 */
+    color: #1e90ff;
     text-decoration: none;
 }
 
@@ -57,7 +65,7 @@ a:hover {
     text-decoration: underline;
 }
 
-/* 포스트 목록 스타일 */
+/* 목록 스타일 */
 ul {
     list-style-type: none;
     padding: 0;
@@ -69,14 +77,14 @@ ul li {
 
 /* 푸터 스타일 */
 footer {
-    background-color: #1e4d8f; /* 진한 파란색 푸터 */
+    background-color: #1e4d8f;
     color: white;
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    position: fixed; /* 화면 하단에 고정 */
-    bottom: 0; /* 화면의 가장 아래에 위치 */
-    left: 0; /* 화면 왼쪽에 맞춤 */
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 footer a {
