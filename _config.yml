@@ -18,6 +18,7 @@ plugins:
   - jekyll-feed       # RSS 피드 생성
   - jekyll-paginate   # 페이지네이션 기능 추가
   - jekyll-sitemap    # 사이트맵 추가
+  - jekyll-archives   # 카테고리별 및 태그별 아카이브 생성
 
 # 페이지네이션 설정
 paginate: 5  # 한 페이지에 표시할 포스트 수
