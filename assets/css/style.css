@@ -74,7 +74,9 @@ footer {
     text-align: center;
     padding: 10px 0;
     width: 100%;
-    position: relative; /* 기본적으로 페이지 하단에 위치 */
+    position: fixed; /* 화면 하단에 고정 */
+    bottom: 0; /* 화면의 가장 아래에 위치 */
+    left: 0; /* 화면 왼쪽에 맞춤 */
 }
 
 footer a {
