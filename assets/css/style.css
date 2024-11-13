@@ -1,0 +1,65 @@
+/* 전체 배경과 텍스트 색상 설정 */
+body {
+    background-color: #f0f8ff; /* 연한 파란색 배경 */
+    color: #333; /* 어두운 텍스트 */
+    font-family: Arial, sans-serif;
+}
+
+/* 링크 색상 */
+a {
+    color: #1e90ff; /* 푸른색 링크 */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 헤더와 푸터 스타일 */
+header, footer {
+    background-color: #1e4d8f; /* 진한 파란색 헤더 및 푸터 */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* 포스트 목록 스타일 */
+h1, h2, h3 {
+    color: #1e4d8f;
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #1e90ff;
+    margin: 20px 0;
+}
+
+/* 카테고리 목록 */
+section h2 {
+    color: #1e4d8f;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+/* 포스트 목록 스타일 */
+ul li a {
+    color: #1e90ff;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: #104e8b;
+}
