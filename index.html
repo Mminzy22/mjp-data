@@ -3,20 +3,27 @@ layout: home
 title: "Minji's Data Journal"
 ---
 
-<div class="intro">
-    <!--<h1>Minji's Data Journal</h1>-->
+<div class="container">
+    <!-- 좌측 카테고리 목록 -->
+    <section class="category-list">
+        <h2>Categories</h2>
+        <ul>
+            <li><a href="https://mminzy22.github.io/mjp-data/category/Data-Analysis/">Data Analysis</a></li>
+            <li><a href="https://mminzy22.github.io/mjp-data/category/SQL/">SQL</a></li>
+            <li><a href="https://mminzy22.github.io/mjp-data/category/Python/">Python</a></li>
+            <li><a href="https://mminzy22.github.io/mjp-data/category/TIL/">TIL</a></li>
+        </ul>
+    </section>
+
+    <!-- 우측 전체 글 목록 -->
+    <section class="post-list">
+        <h2>All Posts</h2>
+        <ul>
+            {% for post in site.posts %}
+                <li>
+                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
 </div>
-
-<hr>
-
-<section>
-    <h2>Categories</h2>
-    <ul>
-        <li><a href="https://mminzy22.github.io/mjp-data/category/Data-Analysis/">Data Analysis</a></li>
-        <li><a href="https://mminzy22.github.io/mjp-data/category/SQL/">SQL</a></li>
-        <li><a href="https://mminzy22.github.io/mjp-data/category/Python/">Python</a></li>
-        <li><a href="https://mminzy22.github.io/mjp-data/category/TIL/">TIL</a></li>
-    </ul>
-</section>
-
-
