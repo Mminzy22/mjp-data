@@ -37,3 +37,7 @@ sass:
 
 exclude:
   - README.md
+
+markdown: kramdown
+kramdown:
+  input: GFM
