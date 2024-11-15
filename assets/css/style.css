@@ -114,24 +114,39 @@ th {
     font-weight: bold; /* 헤더 텍스트 굵게 설정 */
 }
 
-/* 코드 블록 스타일 */
-pre, code {
-    font-family: Consolas, "Courier New", monospace; /* 코드 글꼴 설정 */
-    /* background-color: #f4f4f4; 코드 블록 배경색 설정
-    color: #d14; 코드 텍스트 색상 설정 */
-    padding: 10px; /* 코드 블록 내부 여백 설정 */
-    border-radius: 5px; /* 코드 블록 모서리 둥글게 설정 */
-    overflow-x: auto; /* 코드 내용이 넘칠 경우 가로 스크롤 활성화 */
-    line-height: 1.4; /* 코드 줄 간격 설정 */
+/* pre 요소 스타일 */
+pre {
+    background-color: #f8f9fa; /* 블록 배경색 설정 */
+    color: inherit; /* 텍스트 색상을 기본값으로 상속 */
+    padding: 15px; /* 내부 여백 설정 */
+    border: 1px solid #e1e1e8; /* 테두리 설정 */
+    border-radius: 5px; /* 모서리를 둥글게 설정 */
+    overflow-x: auto; /* 가로 스크롤 활성화 */
+    line-height: 1.5; /* 줄 간격 설정 */
 }
 
-pre {
-    background-color: #f8f9fa; /* pre 요소의 배경색 설정 */
-    padding: 15px; /* pre 요소 내부 여백 설정 */
-    border: 1px solid #e1e1e8; /* pre 요소 테두리 설정 */
-    margin: 20px 0; /* 위아래 여백 추가 */
-    border-radius: 5px; /* pre 요소 모서리 둥글게 설정 */
+/* 코드 블록 내 강조 스타일 */
+.highlight {
+    background-color: #f4f4f4; /* 기본 배경색 */
+    color: inherit; /* 텍스트 색상 상속 */
+    padding: 10px;
+    border-radius: 4px;
 }
+
+.highlight .rouge-keyword {
+    color: #007acc; /* 키워드 강조 색상 */
+    font-weight: bold; /* 키워드를 굵게 */
+}
+
+.highlight .rouge-string {
+    color: #a31515; /* 문자열 강조 색상 */
+}
+
+.highlight .rouge-comment {
+    color: #6a9955; /* 주석 강조 색상 */
+    font-style: italic; /* 주석을 기울임 */
+}
+
 
 /* 링크 스타일 */
 a {
