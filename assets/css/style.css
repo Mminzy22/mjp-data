@@ -118,7 +118,6 @@ th {
 /* 코드 블록 스타일 */
 pre, code {
     font-family: Consolas, "Courier New", monospace;
-    background-color: #f0f0f0; /* 코드 블록 배경색 - 밝은 회색 */
     color: #d14; /* 코드 텍스트 색상 */
     padding: 10px;
     border-radius: 5px;
