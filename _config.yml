@@ -29,16 +29,16 @@ jekyll-archives:
 # 페이지네이션 설정
 paginate: 5  # 한 페이지에 표시할 포스트 수 (최대 5개)
 
-# # 코드 하이라이터 설정
-# highlighter: rouge  # 코드 블록에 색상 하이라이트를 적용하는 도구 설정
+# 코드 하이라이터 설정
+highlighter: rouge  # 코드 블록에 색상 하이라이트를 적용하는 도구 설정
 
-# # CSS 추가 설정
-# sass:
-#   style: expanded  # SASS 컴파일 스타일을 사람이 읽기 쉬운 expanded 형식으로 설정
+# CSS 추가 설정
+sass:
+  style: expanded  # SASS 컴파일 스타일을 사람이 읽기 쉬운 expanded 형식으로 설정
 
 # 빌드에서 제외할 파일
 exclude:
   - README.md  # Jekyll 빌드 과정에서 제외할 파일 목록 (README.md 제외)
 
-# # Markdown 렌더러 설정
-# markdown: kramdown
+# Markdown 렌더러 설정
+markdown: kramdown
