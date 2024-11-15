@@ -15,7 +15,7 @@ plugins:
   - jekyll-paginate   # 페이지를 나누는 기능을 제공하는 플러그인
   - jekyll-sitemap    # 사이트맵을 자동으로 생성하는 플러그인
   - jekyll-archives   # 카테고리 및 태그별 아카이브를 생성하는 플러그인
-  # - jekyll-commonmark-ghpages  # GitHub Pages와 호환되는 Markdown 렌더러
+  - jekyll-commonmark-ghpages  # GitHub Pages와 호환되는 Markdown 렌더러
 
 # jekyll-archives 설정
 jekyll-archives:
@@ -39,6 +39,3 @@ sass:
 # 빌드에서 제외할 파일
 exclude:
   - README.md  # Jekyll 빌드 과정에서 제외할 파일 목록 (README.md 제외)
-
-# Markdown 렌더러 설정
-markdown: kramdown
