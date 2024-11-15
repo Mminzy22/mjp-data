@@ -15,7 +15,6 @@ plugins:
   - jekyll-paginate   # 페이지를 나누는 기능을 제공하는 플러그인
   - jekyll-sitemap    # 사이트맵을 자동으로 생성하는 플러그인
   - jekyll-archives   # 카테고리 및 태그별 아카이브를 생성하는 플러그인
-  - jekyll-commonmark-ghpages  # GitHub Pages와 호환되는 Markdown 렌더러
 
 # jekyll-archives 설정
 jekyll-archives:
@@ -31,6 +30,7 @@ paginate: 5  # 한 페이지에 표시할 포스트 수 (최대 5개)
 
 # 코드 하이라이터 설정
 highlighter: rouge  # 코드 블록에 색상 하이라이트를 적용하는 도구 설정
+markdown: kramdown
 
 # CSS 추가 설정
 sass:
