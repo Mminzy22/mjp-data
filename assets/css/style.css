@@ -1,173 +1,145 @@
 /* 기본 레이아웃 설정 */
 * {
     box-sizing: border-box; /* 모든 요소의 크기를 패딩과 테두리를 포함하도록 설정 */
-    margin: 0; /* 기본 여백 제거 */
-    padding: 0; /* 기본 패딩 제거 */
+    margin: 0;
+    padding: 0;
 }
 
 html, body {
     font-family: Arial, sans-serif; /* 기본 글꼴 설정 */
-    color: #4a4a4a; /* 기본 글자색을 어두운 회색으로 설정 */
-    background-color: #fafafa; /* 배경색을 연한 회색으로 설정 */
+    background-color: #f9f9f9; /* 페이지 배경색을 연한 회색으로 설정 */
+    color: #333; /* 기본 글자색 */
     line-height: 1.6; /* 줄 간격 설정 */
 }
 
-/* 헤더와 푸터는 전체 가로 영역을 차지 */
-header, footer {
-    width: 100%; /* 페이지 전체 너비 차지 */
-    padding: 20px 0; /* 상하 여백 설정 */
-    text-align: center; /* 텍스트 가운데 정렬 */
-    background-color: #4a76a8; /* 배경색 설정 */
-    color: white; /* 텍스트 색상 설정 */
+/* 페이지 컨테이너 */
+.container {
+    max-width: 1000px; /* 컨테이너의 최대 너비 설정 */
+    margin: 20px auto; /* 중앙 정렬과 위아래 여백 설정 */
+    padding: 20px;
+    background-color: #ffffff; /* 컨테이너 배경색 */
+    border: 1px solid #ddd; /* 연한 테두리 */
+    border-radius: 8px; /* 모서리를 둥글게 */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
 }
 
 /* 헤더 스타일 */
+header {
+    background-color: #4a76a8; /* 헤더 배경색 */
+    color: white; /* 헤더 텍스트 색상 */
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 8px 8px 0 0; /* 헤더 모서리 둥글게 */
+}
+
 header h1 {
-    font-size: 2rem; /* 헤더 제목 글꼴 크기 설정 */
-    margin: 0; /* 제목의 기본 여백 제거 */
-}
-
-/* 헤더 내의 링크 스타일 */
-header a {
-    color: #cfe2f3; /* 헤더 내 링크 색상 설정 */
-    text-decoration: none; /* 링크 밑줄 제거 */
-}
-
-header a:hover {
-    color: #ffffff; /* 마우스 오버 시 링크 색상을 흰색으로 변경 */
-    text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
+    font-size: 2rem;
+    margin: 0;
 }
 
 header p {
-    font-size: 1rem; /* 헤더 설명 글꼴 크기 설정 */
-    margin-top: 5px; /* 설명 텍스트 위쪽 여백 설정 */
+    font-size: 1rem;
+    margin-top: 5px;
 }
 
-/* 푸터 스타일 */
-footer {
-    font-size: 0.9rem; /* 푸터 글꼴 크기 설정 */
+header a {
+    color: #cfe2f3; /* 헤더 내 링크 색상 */
+    text-decoration: none;
 }
 
-footer a {
-    color: #cfe2f3; /* 푸터 내 링크 색상 설정 */
-    text-decoration: none; /* 링크 밑줄 제거 */
+header a:hover {
+    color: #ffffff;
+    text-decoration: underline;
 }
 
-footer a:hover {
-    color: #ffffff; /* 마우스 오버 시 링크 색상을 흰색으로 변경 */
-    text-decoration: underline; /* 마우스 오버 시 링크 밑줄 추가 */
-}
-
-/* 메인 섹션 레이아웃 */
-main {
-    max-width: 800px; /* 메인 섹션의 최대 너비 설정 */
-    margin: 40px auto; /* 상하 여백 40px, 좌우 중앙 정렬 */
-    padding: 30px 20px; /* 내부 여백 설정 */
-    background-color: #ffffff; /* 배경색을 흰색으로 설정 */
-    border: 1px solid #ddd; /* 연한 테두리 추가 */
-    border-radius: 8px; /* 모서리를 둥글게 설정 */
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 효과 */
-}
-
-/* 제목 스타일 */
-h1, h2, h3 {
-    color: #2a2a2a; /* 제목 색상을 어두운 회색으로 설정 */
-    margin-bottom: 20px; /* 하단 여백 설정 */
-}
-
-h1 {
-    font-size: 2rem; /* h1 제목 글꼴 크기 설정 */
-}
-
+/* 섹션 제목 */
 h2 {
-    font-size: 1.5rem; /* h2 제목 글꼴 크기 설정 */
-}
-
-h3 {
-    font-size: 1.25rem; /* h3 제목 글꼴 크기 설정 */
+    color: #4a76a8;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
 }
 
 /* 본문 텍스트 */
 p {
-    margin-bottom: 20px; /* 본문 단락 사이의 여백 설정 */
-}
-
-/* 표 스타일 */
-table {
-    width: auto; /* 테이블 너비를 내용에 맞게 설정 */
-    margin: 0px auto; /* 테이블을 가운데 정렬하고 위아래 여백 추가 */
-    background-color: #f9f9f9; /* 표 배경색을 연한 회색으로 설정 */
-    border: 1px solid #e0e0e0; /* 표 테두리를 연하게 설정 */
-    border-radius: 8px; /* 표 모서리를 둥글게 설정 */
-    overflow: hidden; /* 테두리 둥근 모서리가 잘리도록 설정 */
-}
-
-th, td {
-    border: 1px solid #e0e0e0; /* 셀 테두리 설정 */
-    padding: 10px; /* 셀 내부 여백 설정 */
-    text-align: left; /* 텍스트 왼쪽 정렬 */
-}
-
-th {
-    background-color: #4a76a8; /* 테이블 헤더 배경색 설정 */
-    color: white; /* 테이블 헤더 텍스트 색상 설정 */
-    font-weight: bold; /* 헤더 텍스트 굵게 설정 */
-}
-
-/* 코드 블록 스타일 */
-pre, code {
-    font-family: Consolas, "Courier New", monospace; /* 코드 글꼴 설정 */
-    padding: 10px; /* 코드 블록 내부 여백 설정 */
-    border-radius: 5px; /* 코드 블록 모서리 둥글게 설정 */
-    overflow-x: auto; /* 코드 내용이 넘칠 경우 가로 스크롤 활성화 */
-    line-height: 1.4; /* 코드 줄 간격 설정 */
-}
-
-/* 링크 스타일 */
-a {
-    color: #4a76a8; /* 링크 색상 설정 */
-    text-decoration: none; /* 링크 밑줄 제거 */
-}
-
-a:hover {
-    text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
+    margin-bottom: 15px;
 }
 
 /* 목록 스타일 */
 ul {
-    list-style-type: none; /* 기본 목록 스타일 제거 */
-    padding-left: 0; /* 왼쪽 여백 제거 */
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 15px;
 }
 
 ul li {
-    margin: 10px 0; /* 목록 항목 간격 설정 */
-    padding-left: 15px; /* 항목 내부 여백 설정 */
-    position: relative; /* ::before 가상 요소 위치 설정 */
+    margin-bottom: 10px;
 }
 
-ul li::before {
-    content: "•"; /* 목록 앞에 점 추가 */
-    position: absolute; /* 점 위치를 절대 위치로 설정 */
-    left: 0; /* 점을 항목 왼쪽에 배치 */
-    color: #4a76a8; /* 점 색상 설정 */
+/* 표 스타일 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
 }
 
-/* 섹션 제목 스타일 */
-.category-list h2, .post-list h2 {
-    font-size: 1.5rem; /* 섹션 제목 글꼴 크기 설정 */
-    color: #4a76a8; /* 섹션 제목 색상 설정 */
-    margin-bottom: 10px; /* 제목 하단 여백 설정 */
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #e0e0e0;
 }
 
-/* 카테고리 및 포스트 목록 스타일 */
-.category-list, .post-list {
-    margin-bottom: 30px; /* 섹션 간격 설정 */
+th {
+    background-color: #4a76a8;
+    color: white;
+    font-weight: bold;
 }
 
-.category-list a, .post-list a {
-    color: #4a76a8; /* 카테고리 및 포스트 링크 색상 설정 */
+/* 코드 블록 스타일 */
+pre, code {
+    font-family: Consolas, "Courier New", monospace;
+    background-color: #f4f4f4; /* 코드 블록 배경색 */
+    color: #d14; /* 코드 텍스트 색상 */
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto; /* 가로 스크롤 활성화 */
+    line-height: 1.5;
 }
 
-.category-list a:hover, .post-list a:hover {
-    text-decoration: underline; /* 마우스 오버 시 링크 밑줄 추가 */
+pre {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border: 1px solid #e1e1e8;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+/* 링크 스타일 */
+a {
+    color: #4a76a8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* 푸터 스타일 */
+footer {
+    background-color: #4a76a8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.9rem;
+    border-radius: 0 0 8px 8px;
+}
+
+footer a {
+    color: #cfe2f3;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
