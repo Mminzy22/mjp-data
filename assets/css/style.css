@@ -50,7 +50,7 @@ header a:hover {
 /* 페이지 컨테이너 */
 .container {
     max-width: 1000px; /* 컨테이너의 최대 너비 설정 */
-    margin: 110px auto 60px auto; /* 중앙 정렬과 위아래 여백 설정 */
+    margin: 20px auto; /* 중앙 정렬과 위아래 여백 설정 */
     padding: 20px;
     background-color: #ffffff; /* 컨테이너 배경색 */
     border: 1px solid #ddd; /* 연한 테두리 */
