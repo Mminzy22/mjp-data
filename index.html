@@ -8,10 +8,10 @@ title: "Minji's Data Journal"
     <section class="category-list">
         <h2>Categories</h2>
         <ul>
-            <li><a href="https://mminzy22.github.io/mjp-data/category/Data-Analysis/">Data Analysis</a></li>
-            <li><a href="https://mminzy22.github.io/mjp-data/category/SQL/">SQL</a></li>
-            <li><a href="https://mminzy22.github.io/mjp-data/category/Python/">Python</a></li>
-            <li><a href="https://mminzy22.github.io/mjp-data/category/data-analysis-bootcamp/">데이터분석 부트캠프</a></li>
+            <li><a href="{{ site.baseurl }}/category/Data-Analysis/">Data Analysis</a></li>
+            <li><a href="{{ site.baseurl }}/category/SQL/">SQL</a></li>
+            <li><a href="{{ site.baseurl }}/category/Python/">Python</a></li>
+            <li><a href="{{ site.baseurl }}/category/data-analysis-bootcamp/">데이터분석 부트캠프</a></li>
         </ul>
     </section>
 
@@ -21,7 +21,7 @@ title: "Minji's Data Journal"
         <ul>
             {% for post in site.posts %}
                 <li>
-                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+                    <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
                 </li>
             {% endfor %}
         </ul>

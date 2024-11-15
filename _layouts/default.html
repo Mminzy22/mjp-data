@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} | Minji's Data Journal</title>
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | absolute_url }}">
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | prepend: site.baseurl }}">
 </head>
 <body>
 
 <header>
     <!-- site.url을 사용하여 절대 경로로 홈 링크를 설정 -->
-    <h1><a href="{{ site.url }}">Minji's Data Journal</a></h1>
+    <h1><a href="{{ site.baseurl }}">Minji's Data Journal</a></h1>
     <p>{{ site.description }}</p>
 </header>
     

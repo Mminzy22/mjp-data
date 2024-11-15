@@ -1,8 +1,8 @@
 # 기본 정보 설정
 title: "Minji's Data Journal"
 description: "A personal blog on data analysis, SQL, Python, and daily learning logs."
-url: "https://mminzy22.github.io/mjp-data"  # 정확한 루트 도메인 주소로 설정
-baseurl: ""  # 루트 경로이므로 빈 문자열로 설정
+url: "https://mminzy22.github.io"  # 정확한 루트 도메인 주소로 설정
+baseurl: "/mjp-data"  # 루트 경로이므로 빈 문자열로 설정
 
 # 작성자 정보
 author:

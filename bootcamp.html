@@ -6,7 +6,7 @@ permalink: /category/data-analysis-bootcamp/
 ---
 
 <header>
-    <h1><a href="{{ site.url }}">Minji's Data Journal</a></h1>
+    <h1><a href="{{ site.baseurl }}">Minji's Data Journal</a></h1>
     <p>{{ site.description }}</p>
 </header>
 
@@ -15,7 +15,7 @@ permalink: /category/data-analysis-bootcamp/
     <ul>
         {% for post in site.categories[page.category] %}
             <li>
-                <a href="{{ post.url | absolute_url }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
+                <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a> - {{ post.date | date: "%Y-%m-%d" }}
             </li>
         {% endfor %}
     </ul>
