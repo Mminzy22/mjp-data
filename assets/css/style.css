@@ -27,6 +27,17 @@ header h1 {
     margin: 0; /* 제목의 기본 여백 제거 */
 }
 
+/* 헤더 내의 링크 스타일 */
+header a {
+    color: #cfe2f3; /* 헤더 내 링크 색상 설정 */
+    text-decoration: none; /* 링크 밑줄 제거 */
+}
+
+header a:hover {
+    color: #ffffff; /* 마우스 오버 시 링크 색상을 흰색으로 변경 */
+    text-decoration: underline; /* 마우스 오버 시 밑줄 추가 */
+}
+
 header p {
     font-size: 1rem; /* 헤더 설명 글꼴 크기 설정 */
     margin-top: 5px; /* 설명 텍스트 위쪽 여백 설정 */
@@ -39,9 +50,11 @@ footer {
 
 footer a {
     color: #cfe2f3; /* 푸터 내 링크 색상 설정 */
+    text-decoration: none; /* 링크 밑줄 제거 */
 }
 
 footer a:hover {
+    color: #ffffff; /* 마우스 오버 시 링크 색상을 흰색으로 변경 */
     text-decoration: underline; /* 마우스 오버 시 링크 밑줄 추가 */
 }
 
@@ -90,7 +103,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #e0e0e0; /* 셀 테두리 설정 */
+    /* border: 1px solid #e0e0e0; 셀 테두리 설정 */
     padding: 10px; /* 셀 내부 여백 설정 */
     text-align: left; /* 텍스트 왼쪽 정렬 */
 }
