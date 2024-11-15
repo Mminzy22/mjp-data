@@ -95,7 +95,7 @@ p {
 /* 표 스타일 */
 table {
     width: auto; /* 테이블 너비를 내용에 맞게 설정 */
-    margin: 20px auto; /* 테이블을 가운데 정렬하고 위아래 여백 추가 */
+    margin: 0px auto; /* 테이블을 가운데 정렬하고 위아래 여백 추가 */
     background-color: #f9f9f9; /* 표 배경색을 연한 회색으로 설정 */
     border: 1px solid #e0e0e0; /* 표 테두리를 연하게 설정 */
     border-radius: 8px; /* 표 모서리를 둥글게 설정 */
@@ -104,6 +104,7 @@ table {
 
 th, td {
     border: 1px solid #e0e0e0; /* 셀 테두리 설정 */
+    padding: 10px; /* 셀 내부 여백 설정 */
     text-align: left; /* 텍스트 왼쪽 정렬 */
 }
 
@@ -114,16 +115,13 @@ th {
 }
 
 /* 코드 블록 스타일 */
-code {
+pre, code {
     font-family: Consolas, "Courier New", monospace; /* 코드 글꼴 설정 */
-    background-color: #f4f4f4; /* 코드 블록 배경색 설정 */
-    color: #d14; /* 코드 텍스트 색상 설정 */
     padding: 10px; /* 코드 블록 내부 여백 설정 */
     border-radius: 5px; /* 코드 블록 모서리 둥글게 설정 */
     overflow-x: auto; /* 코드 내용이 넘칠 경우 가로 스크롤 활성화 */
     line-height: 1.4; /* 코드 줄 간격 설정 */
 }
-
 
 /* 링크 스타일 */
 a {
